@@ -1,0 +1,61 @@
+# GIF Compressor and Resizer
+
+A Streamlit web application that allows users to upload GIF images, adjust compression settings such as quality and resize dimensions, and then download the compressed GIF. This app uses Python's `Pillow` library for image processing and `Streamlit` for the user interface.
+
+## Features
+
+- **Upload GIFs:** Users can upload any GIF file.
+- **Compression Settings:**
+  - **Resize Width and Height:** Allows resizing the GIF while maintaining the aspect ratio.
+  - **Frame Duration:** Adjust the duration of each frame in milliseconds.
+  - **Optimize GIF:** Option to optimize the GIF to reduce file size.
+  - **Number of Loops:** Set how many times the GIF should loop (`0` for infinite looping).
+- **Preview Original and Compressed GIFs:** Users can see both the original and the compressed versions.
+- **Download Compressed GIF:** Provides a download button for the compressed GIF.
+
+## Installation
+
+### Prerequisites
+
+- **Python 3.7 or higher** installed on your system.
+- **pip** package manager (usually included with Python).
+
+### Set Up a Virtual Environment (Recommended)
+
+It's recommended to use a virtual environment to keep dependencies isolated.
+
+#### For Windows:
+
+1. **Open Command Prompt or PowerShell.**
+2. **Navigate to your project directory:**
+
+ 
+
+3. Create a virtual environment:
+  ```bash
+ cd path\to\your\project
+   python -m venv venv
+
+4. Activate the virtual environment:
+venv\Scripts\activate
+
+Note for PowerShell Users:
+If you encounter an error about script execution policies, run PowerShell as an administrator and execute:
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+5. Install Dependencies
+With the virtual environment activated, install the required packages using the provided requirements.txt file:
+
+bash
+
+pip install -r requirements.txt
+
+# Usage
+Clone or Download the Repository
+
+Download the gif_compressor.py script and place it in your project directory.
+Run the Streamlit App
+
+streamlit run gif_compressor.py
+
