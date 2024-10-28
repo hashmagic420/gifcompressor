@@ -1,0 +1,8 @@
+
+---
+
+### `requirements.txt`
+
+```plaintext
+streamlit>=1.0
+Pillow>=10.0.0
